@@ -278,7 +278,7 @@ variant: 'default'
 
       />
 
-      <Button className="w-full h-12 text-base font-bold rounded-2xl shadow-lg bg-blue-600 hover:bg-blue-700">
+      <Button className="w-full h-12 text-base font-bold rounded-2xl shadow-lg bg-red-600 hover:bg-red-700">
         GET MY FREE QUOTE →
       </Button>
     </form>

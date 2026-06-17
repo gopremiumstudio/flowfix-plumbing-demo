@@ -304,11 +304,14 @@ variant: 'default'
               className="text-center mb-16"
             >
               <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-  🔧 Trusted Across Sydney
+  🏆 Sydney's Trusted Plumbing Team
 </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" style={{ letterSpacing: '-0.02em', textWrap: 'balance' }}>
-                Professional Plumbing Services Across Sydney
-              </h2>
+              <h2 className="text-4xl md:text-5xl font-black leading-tight text-slate-900">
+  Sydney's Emergency <br />
+  <span className="text-blue-600">
+    Plumbing Specialists
+  </span>
+</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 From emergency plumbing and blocked drains to hot water systems and leak repairs, our licensed plumbers provide fast, reliable service across Sydney.
               </p>

@@ -17,7 +17,7 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
   <img
     src={image}
     alt={title}
-    className="w-full h-48 object-cover rounded-xl mb-4 transition-transform duration-500 group-hover:scale-105"
+    className="w-full h-64 object-cover rounded-xl mb-4 transition-transform duration-500 group-hover:scale-105"
   />
 ) : (
   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">

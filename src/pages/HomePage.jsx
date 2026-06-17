@@ -181,8 +181,8 @@ variant: 'default'
 <h1 className="text-[2.3rem] md:text-5xl lg:text-5xl font-bold text-white">
   <>
   24/7 Emergency <br />
-  Plumbers <span className="text-blue-500">Across</span> <br />
-  <span className="text-yellow-400">Sydney</span>
+  Plumbers <span className="text-blue-400">Across</span> <br />
+  <span className="text-yellow-300 text-[1.15em]">Sydney</span>
 </>
 </h1>
 

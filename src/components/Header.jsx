@@ -61,9 +61,9 @@ function Header() {
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
        <a
   href="tel:1300555247"
-  className="ml-auto mr-1 mt-1 flex items-center gap-1 text-blue-700 font-bold text-lg"
+  className="ml-auto mr-1 mt-1 flex items-center gap-1 text-blue-700 font-extrabold text-lg"
 >
-  <Phone className="w-5 h-5" />
+  <Phone className="w-5 h-5 text-red-500" />
   1300 555 247
 </a>
 

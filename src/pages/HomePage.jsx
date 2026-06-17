@@ -178,8 +178,12 @@ variant: 'default'
   🚨 24/7 Emergency Response
 </div>
 
-<h1 className="text-[2.3rem] md:text-5xl lg:text-5xl font-bold text-white leading-tight mb-6">
-  24/7 Emergency Plumbers Across Sydney
+<h1 className="text-[2.3rem] md:text-5xl lg:text-5xl font-bold text-white">
+  <>
+    24/7 Emergency Plumbers <br />
+    <span className="text-blue-500">Across</span>{' '}
+    <span className="text-yellow-400">Sydney</span>
+  </>
 </h1>
 
 <p className="text-lg text-white/90 leading-relaxed mb-5 max-w-prose">

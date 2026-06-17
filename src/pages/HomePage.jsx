@@ -159,7 +159,7 @@ variant: 'default'
   fetchPriority="high"
   className="w-full h-full object-cover"
 />
-            <div className="absolute inset-0 z-0 bg-slate-900"></div>
+            <div className="absolute inset-0 z-0 bg-slate-900/40"></div>
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-6 lg:py-4">

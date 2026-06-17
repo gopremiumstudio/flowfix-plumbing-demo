@@ -152,12 +152,14 @@ variant: 'default'
         {/* Hero Section */}
         <section className="relative min-h-[70vh] lg:min-h-[580px] flex items-center">
           <div className="absolute inset-0 z-0">
-            <img 
-              src="/images/1000019359.webp" 
-              alt="Professional plumber working on pipes"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/60"></div>
+            <img
+  src="/images/1000019359.webp"
+  alt="Professional plumber working on pipes"
+  loading="eager"
+  fetchPriority="high"
+  className="w-full h-full object-cover"
+/>
+            <div className="absolute inset-0 z-0 bg-slate-900"></div>
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-6 lg:py-4">

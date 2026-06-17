@@ -43,7 +43,7 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
       <CardFooter className="mt-auto">
         <Button asChild variant={variant === 'featured' ? 'default' : 'outline'} className="w-full group transition-all duration-300 rounded-xl font-semibold hover:scale-105">
           <Link to={link}>
-            Learn More
+            Get Free Quote
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </Button>

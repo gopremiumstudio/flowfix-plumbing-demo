@@ -221,9 +221,9 @@ variant: 'default'
   className="text-lg px-8 bg-red-600 hover:bg-red-700 text-white w-full"
 >
     <Phone className="w-5 h-5 mr-2" />
-   📞 Call 1300 555 247 Now
+   Call 1300 555 247 Now
   </Button>
-  <p className="text-center text-white/80 text-sm mt-3">
+  <p className="text-center text-white/80 text-xs mt-1">
   ✓ No Call Out Fee • Fixed Upfront Pricing
 </p>
 

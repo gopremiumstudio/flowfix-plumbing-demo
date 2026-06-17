@@ -194,7 +194,7 @@ variant: 'default'
   <span className="text-yellow-400">★★★★★</span>
   <span className="font-semibold ml-2">4.9 Rating</span>
   <span className="text-white/90 ml-2">
-    • 1,500+ Happy Customers
+    • 1,500+ Years Serving Sydney
   </span>
 </div>
 <div className="grid grid-cols-2 gap-3 mb-5">

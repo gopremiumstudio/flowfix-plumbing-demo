@@ -315,12 +315,13 @@ variant: 'default'
               transition={{ duration: 0.5 }}
               className="text-center mb-16"
             >
-              <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+              <div className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 shadow-md"
+>
   🏆 Sydney's Trusted Plumbing Team
 </div>
               <h2 className="text-4xl md:text-5xl font-black leading-tight text-slate-900">
   Sydney's Emergency <br />
-  <span className="text-blue-600">
+  <span className="text-blue-700 font-semibold">
     Plumbing Specialists
   </span>
 </h2>

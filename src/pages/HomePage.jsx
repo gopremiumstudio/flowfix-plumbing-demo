@@ -180,10 +180,10 @@ variant: 'default'
 
 <h1 className="text-[2.3rem] md:text-5xl lg:text-5xl font-bold text-white">
   <>
-    24/7 Emergency <br />
-    <span className="text-blue-400">Plumbers Across</span>{' '}
-    <span className="text-yellow-300">Sydney</span>
-  </>
+  24/7 Emergency <br />
+  Plumbers <span className="text-blue-500">Across</span> <br />
+  <span className="text-yellow-400">Sydney</span>
+</>
 </h1>
 
 <p className="text-lg text-white/90 leading-relaxed mb-5 max-w-prose">

@@ -41,7 +41,11 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
         )}
       </CardContent>
       <CardFooter className="mt-auto">
-        <Button asChild variant={variant === 'featured' ? 'default' : 'outline'} className="w-full group transition-all duration-300 rounded-xl font-semibold hover:scale-105">
+        <Button
+  asChild
+  className={title === '24/7 Emergency Plumbing' ? 'bg-red-600 hover:bg-red-700 text-white' : ''}
+  variant={variant === 'featured' ? 'default' : 'outline'}
+>
           <Link to={link}>
   {buttonText || 'Get Free Quote'}
   <ArrowRight className="ml-2 w-4 h-4" />

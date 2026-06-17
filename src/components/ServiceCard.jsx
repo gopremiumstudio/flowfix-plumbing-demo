@@ -43,7 +43,10 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
       <CardFooter className="mt-auto">
         <Button
   asChild
-  className={title === '24/7 Emergency Plumbing' ? 'bg-red-600 hover:bg-red-700 text-white' : ''}
+  className={title === '24/7 Emergency Plumbing'
+  ? 'w-full bg-red-600 hover:bg-red-700 text-white'
+  : 'w-full'
+}
   variant={variant === 'featured' ? 'default' : 'outline'}
 >
           <Link to={link}>

@@ -370,7 +370,7 @@ variant: 'default'
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4">
+                <div className="inline-flex items-center px-5 py-3 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-8 shadow-lg shadow-blue-100/50 border border-blue-100">
   ⭐ Trusted Sydney Plumbers
 </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6" style={{ letterSpacing: '-0.02em', textWrap: 'balance' }}>

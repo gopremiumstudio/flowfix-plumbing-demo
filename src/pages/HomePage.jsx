@@ -16,6 +16,8 @@ function HomePage() {
       icon: Zap,
       image: '/images/1000019087.webp',
       title: '24/7 Emergency Plumbing',
+      featured:true,
+      buttonText:'Call Now',
       description: 'Fast emergency plumbers available day and night across Sydney.',
       features: [
         'Available 24/7',

@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-function ServiceCard({ image, icon: Icon, title, description, features, link, variant = 'default' }) {
+function ServiceCard({ image, icon: Icon, title, description, features, link, variant,buttonText,featured = 'default' }) {
   const cardClasses = variant === 'featured'
   ? 'bg-slate-50 border border-slate-200 shadow-lg hover:shadow-2xl hover:-translate-y-3 hover:border-primary/40 transition-all duration-500 rounded-2xl'
   : 'bg-slate-50 border border-slate-200 shadow-md hover:shadow-2xl hover:-translate-y-3 hover:border-primary/40 transition-all duration-500 rounded-2xl';
@@ -43,9 +43,9 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
       <CardFooter className="mt-auto">
         <Button asChild variant={variant === 'featured' ? 'default' : 'outline'} className="w-full group transition-all duration-300 rounded-xl font-semibold hover:scale-105">
           <Link to={link}>
-            Get Free Quote
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
+  {buttonText || 'Get Free Quote'}
+  <ArrowRight className="ml-2 w-4 h-4" />
+</Link>
         </Button>
       </CardFooter>
     </Card>

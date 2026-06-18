@@ -11,7 +11,7 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
 : 'bg-gradient-to-br from-blue-50 via-white to-blue-100 border border-blue-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300'
 
   return (
-    <Card className={`group flex flex-col h-full overflow-hidden-3xl${cardClasses}`}>
+    <Card className={`group flex flex-col h-full overflow-hidden rounded-3xl ${cardClasses}`}>
       <CardHeader className="pb-4">
         {image ? (
   <img

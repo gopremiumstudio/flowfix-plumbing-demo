@@ -313,7 +313,7 @@ variant: 'default'
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-16"
+              className="text-center mb-10"
             >
               <div className="inline-flex items-center px-6 py-3 rounded-full bg-blue-50 border border-blue-200 shadow-lg text-slate-800 font-semibold text-sm mb-6">
   🏆 Sydney's Trusted Plumbing Team
@@ -327,11 +327,7 @@ variant: 'default'
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 From emergency plumbing and blocked drains to hot water systems and leak repairs, our licensed plumbers provide fast, reliable service across Sydney.
               </p>
-              <div className="flex items-center justify-center mt-8">
-  <div className="w-16 h-1 bg-blue-200 rounded-full"></div>
-  <div className="w-3 h-3 bg-blue-600 rounded-full mx-3"></div>
-  <div className="w-16 h-1 bg-blue-200 rounded-full"></div>
-</div>
+              
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

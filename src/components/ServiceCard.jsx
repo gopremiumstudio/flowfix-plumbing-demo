@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 
 function ServiceCard({ image, icon: Icon, title, description, features, link, variant,buttonText,featured = 'default' }) {
   const cardClasses = variant === 'featured'
-  ? 'bg-slate-50 border border-slate-200 shadow-lg hover:shadow-2xl hover:-translate-y-3 hover:border-primary/40 transition-all duration-500 rounded-2xl'
-  : 'bg-slate-50 border border-slate-200 shadow-md hover:shadow-2xl hover:-translate-y-3 hover:border-primary/40 transition-all duration-500 rounded-2xl';
+? 'bg-gradient-to-br from-blue-50 via-white to-blue-100 border border-blue-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300'
+: 'bg-gradient-to-br from-blue-50 via-white to-blue-100 border border-blue-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300'
 
   return (
     <Card className={`group flex flex-col h-full overflow-hidden-3xl${cardClasses}`}>

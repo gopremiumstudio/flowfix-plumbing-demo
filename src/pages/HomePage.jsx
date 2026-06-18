@@ -315,8 +315,7 @@ variant: 'default'
               transition={{ duration: 0.5 }}
               className="text-center mb-16"
             >
-              <div className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 shadow-md"
->
+              <div className="inline-flex items-center px-6 py-3 rounded-full bg-blue-50 border border-blue-200 shadow-lg text-slate-800 font-semibold text-sm mb-6">
   🏆 Sydney's Trusted Plumbing Team
 </div>
               <h2 className="text-4xl md:text-5xl font-black leading-tight text-slate-900">

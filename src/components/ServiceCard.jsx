@@ -31,6 +31,20 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
         <CardDescription className="text-base leading-relaxed px-6 pt-2 text-slate-600">{description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow px-6 pt-4">
+        <div className="flex flex-wrap gap-2 mb-5">
+  <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">
+    Same Day Service
+  </span>
+
+  <span className="px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">
+    Licensed & Insured
+  </span>
+
+  <span className="px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-semibold">
+    Upfront Pricing
+  </span>
+</div>
+
         {features && features.length > 0 && (
           <ul className="space-y-2">
             {features.map((feature, index) => (

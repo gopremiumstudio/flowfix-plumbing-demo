@@ -321,9 +321,7 @@ variant: 'default'
     Trusted Across Sydney
   </span>
 </div>
-              <div className="inline-flex items-center px-6 py-3 rounded-full bg-blue-50 border border-blue-200 shadow-lg text-slate-800 font-semibold text-sm mb-6">
-  🏆 Sydney's Trusted Plumbing Team
-</div>
+              
               <h2 className="text-4xl md:text-5xl font-black leading-tight text-slate-900">
   Sydney's Emergency <br />
   <span className="text-blue-700 font-semibold">

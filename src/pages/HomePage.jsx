@@ -330,19 +330,7 @@ variant: 'default'
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 From emergency plumbing and blocked drains to hot water systems and leak repairs, our licensed plumbers provide fast, reliable service across Sydney.
               </p>
-              <div className="flex flex-wrap justify-center gap-3 mt-6">
-  <span className="bg-white px-4 py-2 rounded-full border border-slate-200 text-sm font-medium">
-    Licensed & Insured
-  </span>
-
-  <span className="bg-white px-4 py-2 rounded-full border border-slate-200 text-sm font-medium">
-    Same Day Service
-  </span>
-
-  <span className="bg-white px-4 py-2 rounded-full border border-slate-200 text-sm font-medium">
-    Upfront Pricing
-  </span>
-</div>
+              
 
             </motion.div>
 

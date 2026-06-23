@@ -321,9 +321,9 @@ variant: 'default'
     Trusted Across Sydney
   </span>
 </div>
-<div className="inline-flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-full px-5 py-3 mt-3">
+<div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-50 to-amber-100 border border-yellow-300 rounded-full px-5 py-3 mt-3 shadow-sm">
   <span className="text-xl">👥</span>
-  <span className="font-bold text-yellow-700">
+  <span className="font-bold text-amber-700">
     500+ Happy Customers
   </span>
 </div>

@@ -9,8 +9,140 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
   const cardClasses = variant === 'featured'
 ? 'bg-white border border-slate-200 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300'
 : 'bg-white border border-slate-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300'
+if (title === '24/7 Emergency Plumbing') {
+  return (
+    <Card className="group overflow-hidden rounded-3xl bg-white border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300">
+
+      {/* Image Section */}
+      <div className="relative">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-72 object-cover"
+        />
+
+        <div className="absolute top-4 left-4">
+          <span className="bg-red-600 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg">
+            🔥 MOST POPULAR
+          </span>
+        </div>
+
+        {/* Floating Response Card */}
+        <div className="absolute bottom-4 right-4 bg-white rounded-2xl shadow-xl p-4 min-w-[140px]">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-2xl">
+              ⏰
+            </div>
+
+            <div>
+              <div className="text-red-600 text-xl font-black">
+                24/7
+              </div>
+
+              <div className="text-xs text-slate-500">
+                Available
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-2 text-xs text-slate-600">
+            30-60 Min Response
+          </div>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="p-6">
+
+        <h3 className="text-3xl font-black text-blue-950 mb-2">
+          {title}
+        </h3>
+
+        <p className="text-slate-600 mb-5">
+          {description}
+        </p>
+
+        {/* Feature Boxes */}
+        <div className="grid grid-cols-3 gap-2 mb-5">
+
+          <div className="bg-blue-50 rounded-2xl p-3 text-center">
+            <div className="text-blue-700 font-bold text-sm">
+              Same Day
+            </div>
+          </div>
+
+          <div className="bg-green-50 rounded-2xl p-3 text-center">
+            <div className="text-green-700 font-bold text-sm">
+              Licensed
+            </div>
+          </div>
+
+          <div className="bg-orange-50 rounded-2xl p-3 text-center">
+            <div className="text-orange-700 font-bold text-sm">
+              Upfront
+            </div>
+          </div>
+
+        </div>
+
+        {/* Features */}
+        <div className="space-y-3 mb-6">
+          {features?.map((feature, index) => (
+            <div key={index} className="flex items-center gap-3">
+              <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                ✓
+              </div>
+
+              <span className="text-slate-700">
+                {feature}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Stats Strip */}
+        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 flex justify-between items-center mb-6">
+
+          <div>
+            <div className="text-blue-600 text-2xl font-black">
+              500+
+            </div>
+
+            <div className="text-xs text-slate-500">
+              Jobs Completed
+            </div>
+          </div>
+
+          <div className="text-right">
+            <div className="text-yellow-500">
+              ★★★★★
+            </div>
+
+            <div className="text-xs text-slate-500">
+              4.9 Rating
+            </div>
+          </div>
+
+        </div>
+
+        <Button
+          asChild
+          className="w-full bg-red-600 hover:bg-red-700 text-white rounded-2xl h-14 font-bold"
+        >
+          <Link to={link}>
+            {buttonText || 'Get Free Quote'}
+            <ArrowRight className="ml-2 w-4 h-4" />
+          </Link>
+        </Button>
+
+      </div>
+
+    </Card>
+  );
+}
 
   return (
+    
     <Card className={`group flex flex-col h-full overflow-hidden rounded-3xl ${cardClasses}`}>
       <CardHeader className="p-0">
         {image ? (

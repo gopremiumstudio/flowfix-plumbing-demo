@@ -46,12 +46,15 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
 </div>
 
         {features && features.length > 0 && (
-          <ul className="space-y-2">
+          <ul className="space-y-4">
             {features.map((feature, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm">
-                <span className="text-primary mt-0.5">✓</span>
-                <span>{feature}</span>
-              </li>
+              <li key={index} className="flex items-center gap-3 text-sm font-medium text-slate-700">
+  <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+    <span className="text-green-600 text-xs font-bold">✓</span>
+  </div>
+
+  <span>{feature}</span>
+</li>
             ))}
           </ul>
         )}

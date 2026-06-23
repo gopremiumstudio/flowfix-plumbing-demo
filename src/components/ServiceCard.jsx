@@ -67,19 +67,19 @@ if (title === '24/7 Emergency Plumbing') {
 
           <div className="bg-blue-50 rounded-2xl p-3 text-center">
             <div className="text-blue-700 font-bold text-sm">
-              Same Day
+              Same Day Service
             </div>
           </div>
 
           <div className="bg-green-50 rounded-2xl p-3 text-center">
             <div className="text-green-700 font-bold text-sm">
-              Licensed
+              Licensed & Insured
             </div>
           </div>
 
           <div className="bg-orange-50 rounded-2xl p-3 text-center">
             <div className="text-orange-700 font-bold text-sm">
-              Upfront
+              Upfront Pricing
             </div>
           </div>
 
@@ -175,7 +175,7 @@ if (title === '24/7 Emergency Plumbing') {
         
         <div className="flex flex-wrap gap-2 mb-3">
   <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">
-    Test Serrvice
+    Same Day Service
   </span>
 
   <span className="px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">

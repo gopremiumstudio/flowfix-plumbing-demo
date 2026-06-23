@@ -321,6 +321,12 @@ variant: 'default'
     Trusted Across Sydney
   </span>
 </div>
+<div className="inline-flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-full px-5 py-3 mt-3">
+  <span className="text-xl">👥</span>
+  <span className="font-bold text-yellow-700">
+    500+ Happy Customers
+  </span>
+</div>
               <h2 className="text-4xl md:text-5xl font-black leading-tight text-slate-900">
   Sydney's Emergency <br />
   <span className="text-blue-700 font-semibold">

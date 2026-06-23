@@ -313,7 +313,7 @@ variant: 'default'
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-10"
+              className="text-center mb-6"
             >
               <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full mb-4">
   <span className="text-yellow-500">★★★★★</span>
@@ -321,7 +321,6 @@ variant: 'default'
     Trusted Across Sydney
   </span>
 </div>
-              
               <h2 className="text-4xl md:text-5xl font-black leading-tight text-slate-900">
   Sydney's Emergency <br />
   <span className="text-blue-700 font-semibold">

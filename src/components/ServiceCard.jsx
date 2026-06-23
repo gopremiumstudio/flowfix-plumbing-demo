@@ -162,12 +162,12 @@ if (title === '24/7 Emergency Plumbing') {
   </div>
 )}
 
-        <CardTitle className="text-2xl font-black text-blue-950 pt-6 pt-4">{title}</CardTitle>
+        <CardTitle className="text-2xl font-black text-blue-950 pt-4">{title}</CardTitle>
         <CardDescription className="text-base leading-relaxed px-6 pt-2 text-slate-600">{description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow px-6 pt-2">
         
-        <div className="flex flex-wrap gap-2 mb-3">
+        <div className="flex flex-wrap gap-2 mb-3">p
   <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">
     Same Day Service
   </span>

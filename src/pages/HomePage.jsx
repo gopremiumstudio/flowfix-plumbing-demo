@@ -315,6 +315,12 @@ variant: 'default'
               transition={{ duration: 0.5 }}
               className="text-center mb-10"
             >
+              <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full mb-4">
+  <span className="text-yellow-500">★★★★★</span>
+  <span className="text-sm font-semibold text-blue-900">
+    Trusted Across Sydney
+  </span>
+</div>
               <div className="inline-flex items-center px-6 py-3 rounded-full bg-blue-50 border border-blue-200 shadow-lg text-slate-800 font-semibold text-sm mb-6">
   🏆 Sydney's Trusted Plumbing Team
 </div>
@@ -327,7 +333,20 @@ variant: 'default'
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 From emergency plumbing and blocked drains to hot water systems and leak repairs, our licensed plumbers provide fast, reliable service across Sydney.
               </p>
-              
+              <div className="flex flex-wrap justify-center gap-3 mt-6">
+  <span className="bg-white px-4 py-2 rounded-full border border-slate-200 text-sm font-medium">
+    Licensed & Insured
+  </span>
+
+  <span className="bg-white px-4 py-2 rounded-full border border-slate-200 text-sm font-medium">
+    Same Day Service
+  </span>
+
+  <span className="bg-white px-4 py-2 rounded-full border border-slate-200 text-sm font-medium">
+    Upfront Pricing
+  </span>
+</div>
+
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

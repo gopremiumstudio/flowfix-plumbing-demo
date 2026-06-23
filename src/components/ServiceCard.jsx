@@ -22,8 +22,8 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
     />
 
     {title === '24/7 Emergency Plumbing' && (
-      <div className="absolute top-4 right-4">
-        <span className="bg-red-600 text-white text-xs font-bold px-3 py-2 rounded-full shadow-lg">
+      <div className="absolute top-3 right-3">
+        <span className="bg-red-600 text-white text-[11px] font-bold px-3 py-1.5 rounded-full shadow-lg">
           MOST POPULAR
         </span>
       </div>

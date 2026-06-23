@@ -36,7 +36,7 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
   </div>
 )}
 
-        <CardTitle className="text-2xl font-black text-slate-900 px-6 pt-6">{title}</CardTitle>
+        <CardTitle className="text-2xl font-black text-blue-950 px-6 pt-6">{title}</CardTitle>
         <CardDescription className="text-base leading-relaxed px-6 pt-2 text-slate-600">{description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow px-6 pt-4">

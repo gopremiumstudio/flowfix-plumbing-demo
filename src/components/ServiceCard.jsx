@@ -18,7 +18,7 @@ if (title === '24/7 Emergency Plumbing') {
         <img
           src={image}
           alt={title}
-          className="w-full h-72 object-cover"
+          className="w-full h-56 object-cover"
         />
 
         <div className="absolute top-4 left-4">
@@ -86,7 +86,7 @@ if (title === '24/7 Emergency Plumbing') {
         </div>
 
         {/* Features */}
-        <div className="space-y-3 mb-6">
+        <div className="space-y-2 mb-4">
           {features?.map((feature, index) => (
             <div key={index} className="flex items-center gap-3">
               <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">

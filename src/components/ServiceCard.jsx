@@ -27,10 +27,10 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
   </div>
 )}
 
-        <CardTitle className="text-2xl font-black text-slate-900">{title}</CardTitle>
-        <CardDescription className="text-base leading-relaxed">{description}</CardDescription>
+        <CardTitle className="text-2xl font-black text-slate-900 px-6 pt-6">{title}</CardTitle>
+        <CardDescription className="text-base leading-relaxed px-6 pt-2 text-slate-600">{description}</CardDescription>
       </CardHeader>
-      <CardContent className="flex-grow">
+      <CardContent className="flex-grow px-6 pt-4">
         {features && features.length > 0 && (
           <ul className="space-y-2">
             {features.map((feature, index) => (
@@ -42,7 +42,7 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
           </ul>
         )}
       </CardContent>
-      <CardFooter className="mt-auto">
+      <CardFooter className="mt-auto px-6 pb-6">
         <Button
   asChild
   className={title === '24/7 Emergency Plumbing'

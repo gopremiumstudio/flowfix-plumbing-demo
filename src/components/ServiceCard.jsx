@@ -71,11 +71,11 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
       <CardFooter className="mt-auto px-6 pb-6">
         <Button
   asChild
-  className={title === '24/7 Emergency Plumbing'
-  ? 'w-full bg-red-600 hover:bg-red-700 text-white'
-  : 'w-full'
-}
-  variant={variant === 'featured' ? 'default' : 'outline'}
+  className={
+    title === '24/7 Emergency Plumbing'
+      ? 'w-full bg-red-600 hover:bg-red-700 text-white rounded-xl h-12 font-bold'
+      : 'w-full bg-blue-600 hover:bg-blue-700 text-white rounded-xl h-12 font-bold'
+  }
 >
           <Link to={link}>
   {buttonText || 'Get Free Quote'}

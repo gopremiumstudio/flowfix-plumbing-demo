@@ -150,7 +150,7 @@ if (title === '24/7 Emergency Plumbing') {
     <img
       src={image}
       alt={title}
-      className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+      className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
     />
 
     {title === '24/7 Emergency Plumbing' && (
@@ -168,12 +168,12 @@ if (title === '24/7 Emergency Plumbing') {
   </div>
 )}
 
-        <CardTitle className="text-2xl font-black text-blue-950 px-6 pt-6">{title}</CardTitle>
+        <CardTitle className="text-2xl font-black text-blue-950 pt-6 pt-4">{title}</CardTitle>
         <CardDescription className="text-base leading-relaxed px-6 pt-2 text-slate-600">{description}</CardDescription>
       </CardHeader>
-      <CardContent className="flex-grow px-6 pt-4">
+      <CardContent className="flex-grow px-6 pt-2">
         
-        <div className="flex flex-wrap gap-2 mb-5">
+        <div className="flex flex-wrap gap-2 mb-3">
   <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">
     Same Day Service
   </span>

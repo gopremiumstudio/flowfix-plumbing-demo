@@ -313,7 +313,7 @@ variant: 'default'
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-3"
+              className="text-center mb-1"
             >
               <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full mb-4">
   <span className="text-yellow-500">★★★★★</span>

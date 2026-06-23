@@ -40,30 +40,7 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
         <CardDescription className="text-base leading-relaxed px-6 pt-2 text-slate-600">{description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow px-6 pt-4">
-        {title === '24/7 Emergency Plumbing' && (
-  <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 mb-5 flex items-center gap-4">
-    
-    <div className="w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center text-3xl">
-      🕒
-    </div>
-
-    <div>
-      <div className="text-red-600 text-2xl font-black">
-        24/7
-      </div>
-
-      <div className="text-slate-900 font-semibold">
-        Available
-      </div>
-
-      <div className="text-slate-500 text-sm">
-        30-60 Min Response
-      </div>
-    </div>
-
-  </div>
-)}
-
+        
         <div className="flex flex-wrap gap-2 mb-5">
   <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">
     Same Day Service

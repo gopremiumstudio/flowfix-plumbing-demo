@@ -63,22 +63,22 @@ if (title === '24/7 Emergency Plumbing') {
         </p>
 
         {/* Feature Boxes */}
-        <div className="grid grid-cols-3 gap-2 mb-5">
+        <div className="grid grid-cols-3 gap-3 mb-5">
 
-          <div className="bg-blue-50 rounded-2xl p-3 text-center">
-            <div className="text-blue-700 font-bold text-sm">
+          <div className="bg-blue-50 rounded-2xl p-2 text-center">
+            <div className="text-blue-700 font-bold text-xs">
               Same Day Service
             </div>
           </div>
 
-          <div className="bg-green-50 rounded-2xl p-3 text-center">
-            <div className="text-green-700 font-bold text-sm">
+          <div className="bg-green-50 rounded-2xl p-2 text-center">
+            <div className="text-green-700 font-bold text-xs">
               Licensed & Insured
             </div>
           </div>
 
-          <div className="bg-orange-50 rounded-2xl p-3 text-center">
-            <div className="text-orange-700 font-bold text-sm">
+          <div className="bg-orange-50 rounded-2xl p-2 text-center">
+            <div className="text-orange-700 font-bold text-xs">
               Upfront Pricing
             </div>
           </div>

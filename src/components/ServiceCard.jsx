@@ -101,7 +101,7 @@ if (title === '24/7 Emergency Plumbing') {
         </div>
 
         {/* Stats Strip */}
-        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 flex justify-between items-center mb-6">
+        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-2 flex justify-between items-center mb-4">
 
           <div>
             <div className="text-blue-600 text-2xl font-black">

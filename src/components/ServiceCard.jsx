@@ -150,7 +150,7 @@ if (title === '24/7 Emergency Plumbing') {
     <img
       src={image}
       alt={title}
-      className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
+      className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
     />
 
     {title === '24/7 Emergency Plumbing' && (

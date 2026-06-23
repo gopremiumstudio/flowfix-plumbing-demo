@@ -14,14 +14,23 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
     <Card className={`group flex flex-col h-full overflow-hidden rounded-3xl ${cardClasses}`}>
       <CardHeader className="p-0">
         {image ? (
-  <div className="overflow-hidden">
+  <div className="relative overflow-hidden">
     <img
       src={image}
       alt={title}
       className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
     />
+
+    {title === '24/7 Emergency Plumbing' && (
+      <div className="absolute top-4 right-4">
+        <span className="bg-red-600 text-white text-xs font-bold px-3 py-2 rounded-full shadow-lg">
+          MOST POPULAR
+        </span>
+      </div>
+    )}
   </div>
 ) : (
+
   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
     <Icon className="w-7 h-7 text-primary" />
   </div>

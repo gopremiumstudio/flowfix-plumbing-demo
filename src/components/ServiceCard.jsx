@@ -12,13 +12,15 @@ function ServiceCard({ image, icon: Icon, title, description, features, link, va
 
   return (
     <Card className={`group flex flex-col h-full overflow-hidden rounded-3xl ${cardClasses}`}>
-      <CardHeader className="pb-4">
+      <CardHeader className="p-0">
         {image ? (
-  <img
-    src={image}
-    alt={title}
-    className="w-full h-64 object-cover rounded-xl mb-4 transition-transform duration-500 group-hover:scale-105"
-  />
+  <div className="overflow-hidden">
+    <img
+      src={image}
+      alt={title}
+      className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+    />
+  </div>
 ) : (
   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
     <Icon className="w-7 h-7 text-primary" />

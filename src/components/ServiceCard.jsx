@@ -175,7 +175,7 @@ if (title === '24/7 Emergency Plumbing') {
         
         <div className="flex flex-wrap gap-2 mb-3">
   <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">
-    Same Day Service
+    Test Serrvice
   </span>
 
   <span className="px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">

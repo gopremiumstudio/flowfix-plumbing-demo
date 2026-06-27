@@ -86,7 +86,7 @@ function HomePage() {
     },
     {
 icon: Bath,
-image: 'images/bathroom-renovation.webp',
+image: 'images/1000020648.webp',
 title: 'Bathroom Renovations',
 description: 'Professional bathroom plumbing installations and renovation services across Sydney.',
 features: [

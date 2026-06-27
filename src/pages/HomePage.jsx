@@ -196,14 +196,27 @@ variant: 'default'
         {/* Hero Section */}
         <section className="relative min-h-[70vh] lg:min-h-[580px] flex items-center">
           <div className="absolute inset-0 z-0">
-            <img
-  src="/images/1000021335.webp"
-  alt="Professional plumber working on pipes"
-  loading="eager"
-  fetchPriority="high"
-  className="w-full h-full object-cover"
-/>
-            <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/80 via-black/65 to-black/40"></div>
+            <>
+  {/* Desktop Hero */}
+  <img
+    src="/images/1000021335.webp"
+    alt="FlowFix Plumbing"
+    loading="eager"
+    fetchPriority="high"
+    className="hidden md:block w-full h-full object-cover object-center"
+  />
+
+  {/* Mobile Hero */}
+  <img
+    src="/images/1000021348.webp"
+    alt="FlowFix Plumbing"
+    loading="eager"
+    fetchPriority="high"
+    className="block md:hidden w-full h-full object-cover object-[67%_30%]"
+  />
+</>
+
+            <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/90 via-black/70 to-black/25"></div>
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-6 lg:py-4">
@@ -278,68 +291,91 @@ variant: 'default'
 
     </motion.div>
 
-    {/* RIGHT COLUMN */}
-    <motion.div
+   {/* RIGHT COLUMN */}
+<motion.div
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
 >
-  <div className="bg-gradient-to-br from-[#F8FBFF]/95 to-[#EAF4FF]/95 backdrop-blur-xl rounded-[32px] shadow-[0_20px_60px_rgba(0,0,0,0.25)] border border-white/30 p-5 lg:p-4">
+  <div
+    className="relative overflow-hidden rounded-[32px] border border-white/20 shadow-[0_30px_80px_rgba(0,0,0,0.35)] p-4 lg:p-6 bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: "url('/images/1000021381.webp')",
+    }}
+  >
+    {/* Glass Overlay */}
+    <div className="absolute inset-0 rounded-[32px] bg-gradient-to-br from-white/45 via-white/30 to-blue-100/20 backdrop-blur-[1px]" />
 
-    <div className="text-center mb-4">
-      <span className="text-blue-600 text-sm font-bold uppercase tracking-widest">
-        Available 24/7 Across Sydney
-      </span>
+    {/* Content */}
+    <div className="relative z-10">
+
+      <div className="text-center mb-3">
+        <span className="text-blue-700 text-sm font-extrabold uppercase tracking-[0.25em]">
+          AVAILABLE 24/7 ACROSS SYDNEY
+        </span>
+      </div>
+
+      <h3 className="text-4xl lg:text-[2.5rem] font-black text-center text-slate-900 leading-tight mb-5">
+        Get Your Free Plumbing Quote
+      </h3>
+
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
+
+        <div className="flex items-center justify-center gap-2 bg-white/90 rounded-full py-3 px-5 shadow-lg">
+          <span className="text-blue-600 font-bold">✔</span>
+          <span className="text-sm font-semibold text-slate-700">
+            Same Day Service
+          </span>
+        </div>
+
+        <div className="flex items-center justify-center gap-2 bg-white/90 rounded-full py-3 px-5 shadow-lg">
+          <span className="text-blue-600 font-bold">✔</span>
+          <span className="text-sm font-semibold text-slate-700">
+            Fixed Upfront Pricing
+          </span>
+        </div>
+
+        <div className="flex items-center justify-center gap-2 bg-white/90 rounded-full py-3 px-5 shadow-lg">
+          <span className="text-blue-600 font-bold">✔</span>
+          <span className="text-sm font-semibold text-slate-700">
+            Licensed & Fully Insured
+          </span>
+        </div>
+
+      </div>
+
+      <form
+        className="space-y-2"
+        onSubmit={(e) => {
+          e.preventDefault();
+          alert("Thank you! We will contact you shortly.");
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Full Name"
+          className="w-full bg-white border border-white/80 rounded-2xl px-5 py-3.5 text-gray-800 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none transition"
+        />
+
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          className="w-full bg-white border border-white/80 rounded-2xl px-5 py-3.5 text-gray-800 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none transition"
+        />
+
+        <textarea
+          rows={1}
+          placeholder="Tell us about your plumbing issue..."
+          className="w-full bg-white border border-white/80 rounded-2xl px-5 py-3.5 text-gray-800 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none transition"
+        />
+
+        <Button className="w-full h-12 rounded-2xl text-lg font-extrabold bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 shadow-[0_12px_35px_rgba(220,38,38,.45)]">
+          GET MY FREE QUOTE →
+        </Button>
+
+      </form>
+
     </div>
-
-    <h3 className="text-xl font-bold mb-1 text-gray-900">
-      Get Your Free Plumbing Quote
-    </h3>
-
-    <p className="text-gray-600 mb-4">
-  ✓ Same Day Service <br />
-  ✓ Fixed Upfront Pricing <br />
-  ✓ Licensed & Fully Insured
-</p>
-
-
-    <form
-      className="space-y-2"
-      onSubmit={(e) => {
-        e.preventDefault();
-        alert("Thank you! We will contact you shortly.");
-      }}
-    >
-      <input
-        type="text"
-        placeholder="Full Name"
-        className="w-full bg-gray-50 border-2 border-gray-200 rounded-2xl px-5 py-4 focus:border-blue-500 outline-none"
-
-      />
-
-      <input
-        type="tel"
-        placeholder="Phone Number"
-        className="w-full bg-gray-50 border-2 border-gray-200 rounded-2xl px-5 py-4 focus:border-blue-500 outline-none"
-
-      />
-
-      
-
-      
-
-      <textarea
-        rows={1}
-        placeholder="Tell us about your plumbing issue..."
-        className="w-full bg-gray-50 border-2 border-gray-200 rounded-2xl px-5 py-4 focus:border-blue-500 outline-none"
-
-      />
-
-      <Button className="w-full h-12 text-base font-bold rounded-2xl shadow-lg bg-red-600 hover:bg-red-700">
-        GET MY FREE QUOTE →
-      </Button>
-    </form>
-
   </div>
 </motion.div>
 

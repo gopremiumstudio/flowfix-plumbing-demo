@@ -21,15 +21,15 @@ function Header() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b shadow-sm">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-[56px] lg:h[68px]">
           {/* Logo */}
 <Link to="/" className="flex items-center">
   <img
     src="/images/cropped.logo.png"
     alt="FlowFix Plumbing"
-    className="h-14 w-auto"
+    className="h-11 lg:h14 w-auto"
   />
 </Link>
 
@@ -52,33 +52,38 @@ function Header() {
           </nav>
 
           {/* Call Now Button - Desktop */}
-          <Button className="hidden lg:flex items-center gap-0 bg-red-600 hover:bg-red-700 text-white font-semibold">
-            <Phone className="w-4 h-4" />
-            Call Now: 1300 555 247
-          </Button>
+          <Button
+  className="hidden lg:flex items-center gap-2 rounded-full h-12 px-6
+  bg-gradient-to-r from-red-600 to-red-500
+  hover:from-red-700 hover:to-red-600
+  text-white font-bold shadow-[0_10px_30px_rgba(220,38,38,.35)]
+  hover:shadow-[0_12px_35px_rgba(220,38,38,.5)]
+  transition-all duration-300 hover:scale-[1.02]"
+>
+  <Phone className="w-5 h-5" />
+  1300 555 247
+</Button>
 
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
-       <a
-  href="tel:1300555247"
-  className="ml-auto mr-1 mt-1 flex items-center gap-1 text-blue-700 font-extrabold text-lg"
->
-  <Phone className="w-5 h-5 text-red-500" />
-  1300 555 247
-</a>
+       
+<SheetTrigger asChild>
+  <Button
+    variant="outline"
+    size="icon"
+    className="lg:hidden h-11 w-11 rounded-2xl bg-white shadow-md border border-gray-200"
+  >
+    <Menu className="w-5 h-5" />
+  </Button>
+</SheetTrigger>
 
-            <SheetTrigger asChild className="lg:hidden">
-              <Button variant="outline" size="icon">
-                <Menu className="w-5 h-5" />
-              </Button>
-            </SheetTrigger>
             <SheetContent side="right" className="w-[300px]">
               <div className="flex flex-col gap-6 mt-8">
                 <Link to="/" className="flex items-center gap-3 mb-4">
   <img
     src="/images/logo.png"
     alt="FlowFix Plumbing"
-    className="h-10 md:h-12 w-auto"
+    className="h-12 md:h-14 w-auto"
   />
 
   <span className="text-2xl font-bold text-primary">

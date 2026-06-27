@@ -478,37 +478,45 @@ variant: 'default'
 
         <div className="bg-white rounded-[32px] p-5 lg:p-6 border border-slate-200 shadow-[0_18px_50px_rgba(15,23,42,.08)]">
 
-          <span className="inline-block text-xs font-bold tracking-[0.25em] uppercase text-blue-600">
-            Meet The Owner
-          </span>
+  <span className="inline-block text-xs font-bold tracking-[0.25em] uppercase text-blue-600">
+    Meet The Owner
+  </span>
 
-          <h2 className="mt-2 text-3xl lg:text-4xl font-black text-slate-900">
-            Michael Thompson
-          </h2>
+  <h2 className="mt-2 text-3xl lg:text-4xl font-black text-slate-900">
+    Michael Thompson
+  </h2>
 
-          <p className="mt-1 text-base font-semibold text-blue-600">
-            Owner & Licensed Master Plumber
-          </p>
+  <p className="mt-1 text-base font-semibold text-blue-600">
+    Owner & Licensed Master Plumber
+  </p>
 
-          <div className="mt-5 h-1 w-16 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500"></div>
+  <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500"></div>
 
-          <blockquote className="mt-5 border-l-4 border-blue-500 pl-4 italic text-[15px] leading-7 text-slate-600">
-  "Every home deserves honest advice, quality workmanship and service you can trust. Thank you for choosing FlowFix Plumbing—we're proud to be your local plumbing experts."
-</blockquote>
+  <blockquote className="mt-4 border-l-4 border-blue-500 pl-4 italic text-[15px] leading-7 text-slate-600">
+    "Every home deserves honest advice, quality workmanship and service you can trust. Thank you for choosing FlowFix Plumbing—we're proud to be your local plumbing experts."
+  </blockquote>
 
-          <div className="mt-4 pt-4 border-t border-slate-200">
+  <div className="mt-4 pt-3 flex items-center justify-between">
 
-            <p className="text-xl font-bold text-slate-900">
-              — Michael Thompson
-            </p>
+    <div>
+      <p
+        className="text-[32px] leading-none text-slate-900"
+        style={{ fontFamily: "'Dancing Script', cursive" }}
+      >
+        Michael Thompson
+      </p>
 
-            <p className="mt-1 text-blue-600 text-sm font-medium">
-              Owner • FlowFix Plumbing
-            </p>
+      <p className="text-sm text-blue-600 font-medium mt-1">
+        Founder • FlowFix Plumbing
+      </p>
+    </div>
 
-          </div>
+    <div className="w-12 h-[2px] rounded-full bg-gradient-to-r from-blue-600 to-cyan-500"></div>
 
-        </div>
+  </div>
+
+</div>
+
 
       </motion.div>
 

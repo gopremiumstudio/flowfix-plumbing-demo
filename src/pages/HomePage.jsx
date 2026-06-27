@@ -197,7 +197,7 @@ variant: 'default'
         <section className="relative min-h-[70vh] lg:min-h-[580px] flex items-center">
           <div className="absolute inset-0 z-0">
             <img
-  src="/images/1000019359.webp"
+  src="/images/1000021335.webp"
   alt="Professional plumber working on pipes"
   loading="eager"
   fetchPriority="high"

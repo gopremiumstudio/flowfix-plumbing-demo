@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import {Phone} from 'lucide-react';
 
 function ServiceCard({ image, icon: Icon, title, description, features, link, variant,buttonText,featured = 'default' }) {
   const cardClasses = variant === 'featured'
@@ -134,14 +135,14 @@ shadow-[0_20px_60px_rgba(0,0,0,0.35)]
         </div>
 
         <Button
-          asChild
-          className="w-full bg-gradient-to-r from-[#DC2626] via-[#EF4444] to-[#F87171] hover:from-[#B91C1C] hover:via-[#DC2626] hover:to-[#EF4444] text-white rounded-2xl h-14 font-bold shadow-[0_20px_50px_rgba(239,68,68,.45)] hover:shadow-[0_25px_60px_rgba(239,68,68,.60)] transition-all duration-300 hover:scale-[1.02]"
-        >
-          <Link to={link}>
-            {buttonText || 'Get Free Quote'}
-            <ArrowRight className="ml-2 w-4 h-4" />
-          </Link>
-        </Button>
+  asChild
+  className="w-full bg-gradient-to-r from-[#DC2626] via-[#EF4444] to-[#F87171] hover:from-[#B91C1C] hover:via-[#DC2626] hover:to-[#EF4444] text-white rounded-2xl h-14 font-bold shadow-[0_20px_50px_rgba(239,68,68,.45)] hover:shadow-[0_25px_60px_rgba(239,68,68,.60)] transition-all duration-300 hover:scale-[1.02]"
+>
+  <a href="tel:1300555247">
+    {buttonText || 'Call 1300 555 247'}
+    <Phone className="ml-2 w-4 h-4" />
+  </a>
+</Button>
 
       </div>
 

@@ -1203,12 +1203,15 @@ variant: 'default'
       <div className="flex flex-col sm:flex-row gap-4 mb-6">
 
         <Button
-          size="lg"
-          className="h-14 px-8 rounded-xl bg-[#E53935] hover:bg-[#C62828] text-white shadow-xl shadow-red-500/30 transition-all duration-300"
-        >
-          <Phone className="w-5 h-5 mr-2" />
-          Call Now – 1300 555 347
-        </Button>
+  asChild
+  size="lg"
+  className="h-14 px-8 rounded-xl bg-[#E53935] hover:bg-[#C62828] text-white shadow-xl shadow-red-500/30 transition-all duration-300"
+>
+  <a href="tel:1300555347">
+    <Phone className="w-5 h-5 mr-2" />
+    Call Now – 1300 555 347
+  </a>
+</Button>
 
         <Button
           asChild

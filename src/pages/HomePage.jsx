@@ -259,13 +259,15 @@ variant: 'default'
 
 <div className="flex flex-col sm:flex-row gap-4">
   <Button
+  asChild
   size="lg"
   className="w-full h-10 rounded-xl font-semibold bg-gradient-to-r from-red-600 via-red-500 to-red-600 hover:from-red-700 hover:to-red-600 text-white font-bold text-xl shadow-[0_0_35px_rgba(239,68,68,.45)] hover:shadow-[0_0_50px_rgba(239,68,68,.65)] transition-all duration-300 hover:scale-[1.02]"
-
 >
+  <a href="tel:1300555247">
     <Phone className="w-5 h-5 mr-2" />
-   Call 1300 555 247 Now
-  </Button>
+    Call 1300 555 247 Now
+  </a>
+</Button>
   <p className="text-center text-white/80 text-xs mt-3">
   ✓ No Call Out Fee • Fixed Upfront Pricing
 </p>
